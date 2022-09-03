@@ -88,7 +88,6 @@ public class MysqlService {
             });
             baseResponse.setData(res);
         } catch (Exception e) {
-            System.out.println("张弛");
             System.out.println(e);
         }
         return baseResponse;
