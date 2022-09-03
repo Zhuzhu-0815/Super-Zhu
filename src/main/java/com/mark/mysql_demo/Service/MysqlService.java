@@ -88,6 +88,7 @@ public class MysqlService {
             });
             baseResponse.setData(res);
         } catch (Exception e) {
+            System.out.println(11);
             System.out.println(e);
         }
         return baseResponse;

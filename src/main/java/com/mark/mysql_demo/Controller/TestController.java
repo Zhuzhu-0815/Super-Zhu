@@ -4,6 +4,7 @@ import com.mark.mysql_demo.Entity.request.ExecuteSql;
 import com.mark.mysql_demo.Entity.request.MysqlSelectByName;
 import com.mark.mysql_demo.Entity.response.BaseResponse;
 import com.mark.mysql_demo.Service.MysqlService;
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,7 +17,6 @@ public class TestController {
 
     @Autowired
     MysqlService mysqlService;
-
     @RequestMapping(value = "/333")
     public BaseResponse selectUser(@RequestBody MysqlSelectByName mysqlSelectByName) {
         return mysqlService.getUser(mysqlSelectByName);
